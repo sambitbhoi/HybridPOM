@@ -13,6 +13,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import com.Arizona.Utils.TestUtilis;
+
 public class TestBase {
 	
 		
@@ -41,10 +43,10 @@ public class TestBase {
 		{
 			String browserName = prop.getProperty("browser");
 			if(browserName.equals("chrome")){
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\eclipse-workspace\\Arizona\\76\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\eclipse-workspace\\Arizona\\Driver\\chromedriver.exe");
 				 driver = new ChromeDriver();
 			}else if (browserName.equals("FF")) {
-				System.setProperty("webdriver.gecko.driver", "workspace/finance/Driver/geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver", "C:\\Users\\User\\eclipse-workspace\\Arizona\\Driver\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				
 			}else if (browserName.equals("IE")){
@@ -60,8 +62,8 @@ public class TestBase {
 			
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			//driver.manage().timeouts().pageLoadTimeout(TestUtils.PAGE, TimeUnit.SECONDS);
-			//driver.manage().timeouts().implicitlyWait(TestUtils.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+			driver.manage().timeouts().pageLoadTimeout(TestUtilis.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(TestUtilis.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 			
 			driver.get(prop.getProperty("url"));
 		}
