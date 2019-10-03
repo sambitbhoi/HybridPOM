@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Arizona Test Automation Test Suite">
+
+	
+
+
+	<test name="Arizona Test Cases">
+		<classes>
+			<class name="com.Arizona.TestPages.signInPageTest"></class>
+			
+
+		</classes>
+	</test>
+</suite>

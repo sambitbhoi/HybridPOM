@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Arizona Test Automation Test Suite" duration-ms="23559" started-at="2019-10-03T22:59:32 IST" finished-at="2019-10-03T22:59:56 IST">
+    <groups>
+    </groups>
+    <test name="Arizona Test Cases" duration-ms="23559" started-at="2019-10-03T22:59:32 IST" finished-at="2019-10-03T22:59:56 IST">
+      <class name="com.Arizona.TestPages.signInPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.Arizona.TestPages.signInPageTest@711f39f9]" name="setUp" is-config="true" duration-ms="19383" started-at="2019-10-03T22:59:32 IST" finished-at="2019-10-03T22:59:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginTest()[pri:0, instance:com.Arizona.TestPages.signInPageTest@711f39f9]" name="LoginTest" duration-ms="3273" started-at="2019-10-03T22:59:52 IST" finished-at="2019-10-03T22:59:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method status="PASS" signature="Teardown()[pri:0, instance:com.Arizona.TestPages.signInPageTest@711f39f9]" name="Teardown" is-config="true" duration-ms="836" started-at="2019-10-03T22:59:55 IST" finished-at="2019-10-03T22:59:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- com.Arizona.TestPages.signInPageTest -->
+    </test> <!-- Arizona Test Cases -->
+  </suite> <!-- Arizona Test Automation Test Suite -->
+</testng-results>
